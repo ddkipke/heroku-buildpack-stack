@@ -120,5 +120,6 @@ rsync -avq "$WORK_DIR/.stack-work/" "$SANDBOX_DIR"
 cp -Rp "$WORK_DIR/.stack-work" "$BUILD_DIR"
 
 chmod +x "$WORK_DIR/watch-site"
+mv "$WORK_DIR/watch-site" "$BUILD_DIR/.local/bin"
 
 speak "Finished!"
